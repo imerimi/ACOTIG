@@ -14,15 +14,11 @@ class DB{
 		private static Statement st1;
 		public int group_num;
 		public ArrayList group= new ArrayList();
-
-		// public String db= "fyp";
-		// public String url = "jdbc:mysql://localhost/fyp?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-		// public String user = "root";
-		// public String pwd= "";
+	
 	public DB() {
 		try{
-			String db= "acotig";
-			String url = "jdbc:mysql://localhost/acotig?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+			String db= "acotig";  //to be changed
+			String url = "jdbc:mysql://localhost/acotig?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; //tobechanged
 			String user = "root";
 			String pwd= "";
 			Class.forName("com.mysql.jdbc.Driver");
@@ -245,8 +241,6 @@ class DB{
 	}
 		
 }
-
-
 
 
 //javac -cp mysql-connector-java-8.0.19.jar;. DB.java
