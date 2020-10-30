@@ -1,0 +1,190 @@
+body{
+	font-family: 'Nanum Myeongjo', serif;
+	margin:0;
+}
+
+h2{
+	padding:10px;
+	font-size:22px;
+}
+
+.bg_img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/* nav */
+header{
+	background:#8e7cc3;
+	text-align:center;
+	position:fixed;
+	width:100%;
+	z-index:2;
+}
+
+.logo{
+	margin:0;
+	font-size:2.2rem;
+}
+
+.logout{
+	color:white;
+	background:none;
+}
+
+nav{
+	position:relative;
+	text-align:left;
+	top:6%;
+	left:0;
+	background:#8e7cc3;
+	padding:1rem;
+	width:100%;
+	display:none;
+}
+
+nav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+nav li{
+	margin:0 0 0.35rem 1rem;
+}
+
+nav a{
+	text-decoration:none;
+	font-weight: bold;
+	font-size:1.25rem;
+	color:white;
+	text-transform:uppercase; 
+}
+
+button:hover,nav a:hover{
+	color:#351c75;
+}
+
+.nav_toggle{
+	display:none;
+}
+
+.nav_toggle:checked ~ nav{
+	display:block;
+}
+
+.nav_label{
+	position:absolute;
+	top:0;
+	left:0;
+	margin-left: 0.8rem;
+	height:100%;
+	display:flex;
+	padding-top:20px;
+	padding-left:5px;
+	
+}
+
+.nav_label span, .nav_label span::before, .nav_label span::after{
+	display:block;
+	background:white;
+	height:2px;
+	width:2em;
+	border-radius:2px;
+	position:relative;
+}
+
+.nav_label span::before, .nav_label span::after{
+	content:"";
+	position:absolute;
+}
+
+.nav_label span::before{
+	bottom:7px;
+}
+
+.nav_label span::after{
+	top:7px;
+}
+
+main{
+	position:absolute;
+	top:80px;
+	display:inline;
+	width:100%;
+}
+
+.choice{
+	float:left;
+	border:black solid 1px;
+	margin:50px;
+	padding:30px 30px 50px 20px;
+}
+
+.choice:hover{
+	transform:scale(1.1);
+	background:#d9d2e9;
+	border:0px;
+}
+
+.choice i{
+	font-size:60px;
+	color:grey;	
+}
+
+.desc{
+	text-align:center;
+	padding-top:10px;
+	font-size:1.5rem;
+	color:black;
+}
+
+.choice a{
+	text-decoration:none;
+}
+
+@media screen and (min-width:800px){
+	.nav-label{
+		display:none;
+	}
+	
+	header{
+		padding:2px 2px 2px 20px;
+		display:inline;
+	}
+	
+	.logo{
+		float:left;
+	}
+	
+	nav{
+		all:unset;
+		display:flex;
+		justify-content:flex-end;
+		align-items:center;
+		padding-right:50px;
+	}
+	
+	nav ul{
+		display:flex;
+		justify-content:flex-end;
+	}
+	
+	nav ul li{
+		padding:5px 15px 2px 15px;
+		margin-left:3eml
+	}
+	
+	.nav_label span, .nav_label span::before, .nav_label span::after{
+		all:unset;
+	}
+	
+	.choice i{
+		font-size:160px;
+		color:grey;	
+	}
+	
+}
+
